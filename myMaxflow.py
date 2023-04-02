@@ -97,10 +97,11 @@ class myMaxflow:
                     queue.append(nei)
         
         if self.levels[self.sink] > 0:
-            print("bfs sink node is in level", self.levels[self.sink])
             print("cur flow: ", self.flow)
+            print("bfs: sink node is in level", self.levels[self.sink])
             # print("total nodes: ", len(self.levels))
-            print("reach sink cnt: ", reach_sink_cnt)
+            print("bfs: number of paths that reaches sink: ", reach_sink_cnt)
+            print()
 
         # print("print level tables: ")
         # print(level_cnt)
